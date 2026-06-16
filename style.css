@@ -1,0 +1,164 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav{
+    background-color: #333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: rgb(95, 170, 239);
+}
+section{
+    scroll-margin-top: 100px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#home{
+    text-align: center;
+    background-color: #610fe6;
+    color: white;
+    padding: 80px 20px;
+}
+
+h1,h2{
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#contact{
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#contact a{
+    text-decoration: none;
+    margin: 10px;
+    color: #610fe6;
+    font-weight: bold;
+}
+
+#contact a:hover{
+    color: black;
+}
+
+button{
+    background-color: white;
+    color: #610fe6;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.project-card{
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a{
+    text-decoration: none;
+    background: #6c63ff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+  background: #5448e5;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill{
+    background-color: #610fe6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+     
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill i {
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.skill:hover i {
+  transform: scale(1.2);
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
