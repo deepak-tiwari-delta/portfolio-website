@@ -4,7 +4,7 @@ A modern and responsive portfolio website built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-[View Portfolio](YOUR_GITHUB_PAGES_LINK_HERE)
+[View Portfolio](https://deepak-tiwari-delta.github.io/portfolio-website/)
 
 ## 📌 Features
 
@@ -49,7 +49,7 @@ portfolio/
 
 ## 📸 Screenshot
 
-Add a screenshot of your portfolio here.
+(portfolio.png)
 
 ## 📬 Contact
 
