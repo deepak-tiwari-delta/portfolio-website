@@ -14,6 +14,7 @@ nav{
     padding: 15px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul{
@@ -21,6 +22,7 @@ nav ul{
     display: flex;
     justify-content: center;
     padding: 0;
+    gap: 20px;
 }
 
 nav a {
@@ -47,6 +49,10 @@ section{
     background-color: #610fe6;
     color: white;
     padding: 80px 20px;
+}
+
+.highlight {
+    color: #007bff;
 }
 
 h1,h2{
@@ -82,7 +88,22 @@ li{
     color: black;
 }
 
-button{
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btnResume,button{
     background-color: white;
     color: #610fe6;
     border: none;
@@ -91,10 +112,18 @@ button{
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+    transition: all 3s ease;
 }
 
-button:hover{
-    transform: scale(1.05);
+.btnResume{
+    text-decoration: none;
+}
+  
+ 
+.btnResume,button:hover{
+    /* transform: scale(1.05); */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(134, 33, 10, 0.256);
 }
 
 .project-card{
@@ -162,3 +191,67 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+#typing-text{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#typing-text::after{
+    content: " |";
+    animation: blink 0.7s infinite;
+
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+    
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .project-card,
+.dark-mode .skill{
+    background-color: #2a2a2a;
+}
+.dark-mode section {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home{
+        padding: 40px 20px;
+    }
+
+    .skills-container{
+        justify-content: center;
+    }
+
+    .project-card{
+        width: 90%;
+    }
+}
+
+ 

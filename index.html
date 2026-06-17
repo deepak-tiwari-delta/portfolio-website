@@ -17,18 +17,27 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="themeBtn">Dark Mode</button>
     </nav>
     
     <!-- Home section  -->
     <section id="home">
-        <h1>Hi, I'm Deepak</h1>
-        <p>Frontend Developer</p>
-        <button>View Projects</button>
-        <button>Contact me</button>
+        <h1>Hi, I'm <span class="highlight">Deepak</span></h1>
+        <p id="typing-text"></p>
+          
+        <button id="projectBtn">View Projects</button>
+        <button id="contactBtn">Contact Me</button>
+
+        <a href="Deepak_Tiwari_Resume.pdf"
+           download
+           class="btnResume">
+           Download Resume
+        </a>
+    
     </section>
 
      <!-- About section -->
-    <section id="about">
+    <section id="about" class="hidden">
         <h2>About</h2>
         <p>
            I am a Frontend Developer passionate about creating responsive and user-friendly web applications.
@@ -38,7 +47,7 @@
     </section>
 
     <!-- skills -->
-    <section id="skills">
+    <section id="skills" class="hidden">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill"><i class="fa-brands fa-html5"></i>HTML5</div>
@@ -52,7 +61,7 @@
     </section>
 
     <!-- Project section -->
-    <section id="projects">
+    <section id="projects" class="hidden">
         <h2>Projects</h2>
          <div class="project-card">
             <h3>To-Do List App</h3>
@@ -67,15 +76,29 @@
          </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: deepak626313@gmail.com</p>
-        <a href="https://github.com/deepak-tiwari-delta" target="_blank">Github</a> 
-        <a href="https://www.linkedin.com/in/deepak-tiwari-myprofile/" target="_blank">LinkedIn</a>
-    </section>
+    <!-- contact section -->
+   <section id="contact" class="hidden">
+    <h2>Contact</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+
+        <input type="email" id="email" placeholder="Your Email">
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p>Email: deepak626313@gmail.com</p>
+
+    <a href="https://github.com/deepak-tiwari-delta" target="_blank">Github</a>
+
+    <a href="https://www.linkedin.com/in/deepak-tiwari-myprofile/" target="_blank">LinkedIn</a>
+</section>
      <footer>
         <p>© 2026 Deepak Tiwari</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html> 

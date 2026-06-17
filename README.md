@@ -1,17 +1,64 @@
-# Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
-A responsive portfolio website built using HTML, CSS and JavaScript.
+A modern and responsive portfolio website built using HTML, CSS, and JavaScript.
 
-## Features
+## 🚀 Live Demo
+
+[View Portfolio](YOUR_GITHUB_PAGES_LINK_HERE)
+
+## 📌 Features
+
 - Responsive Design
-- Sticky Navbar
-- Smooth Scrolling
+- Dark Mode Toggle
+- Typing Text Animation
+- Smooth Scrolling Navigation
+- Scroll Reveal Animation
 - Skills Section with Icons
-- Project Cards
-- Contact Section
+- Project Showcase
+- Contact Form Validation
+- Resume Download Button
+- GitHub & LinkedIn Integration
 
-## Technologies Used
+## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
-- JavaScript
-- Font Awesome
+- JavaScript (ES6)
+
+## 📂 Project Structure
+
+```text
+portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+├── Deepak_Tiwari_Resume.pdf
+└── README.md
+```
+
+## 🎯 What I Learned
+
+- DOM Manipulation
+- Event Listeners
+- Form Validation
+- Dark Mode Implementation
+- Scroll Animations
+- Responsive Web Design
+- Git & GitHub Workflow
+
+## 📸 Screenshot
+
+Add a screenshot of your portfolio here.
+
+## 📬 Contact
+
+Email: deepak626313@gmail.com
+
+GitHub: https://github.com/deepak-tiwari-delta
+
+LinkedIn: https://www.linkedin.com/in/deepak-tiwari-myprofile/
+
+---
+
+⭐ If you like this project, feel free to star the repository.
