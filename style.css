@@ -12,7 +12,7 @@ body{
 nav{
     background-color: #333;
     padding: 15px;
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 1000;
 }
@@ -49,10 +49,11 @@ section{
     background-color: #610fe6;
     color: white;
     padding: 80px 20px;
+    min-height: 80vh;
 }
 
 .highlight {
-    color: #007bff;
+    color: #ffd700;
 }
 
 h1,h2{
@@ -254,4 +255,80 @@ footer {
     }
 }
 
+ .hero-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text{
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  border: 5px solid white;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.profile-img{
+  transition: 0.4s ease;
+}
+
+.profile-img:hover{
+  transform: scale(1.05);
+}
+
+@media(max-width:768px){
+
+  .profile-img{
+    width: 220px;
+    height: 220px;
+  }
+
+}
  
+
+.hero-buttons{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+@media(max-width:768px){
+
+  .hero-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-circle{
+    width: 180px;
+    height: 180px;
+    font-size: 70px;
+  }
+
+}
+
+.hero-desc{
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f0f0f0;
+}

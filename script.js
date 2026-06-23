@@ -1,4 +1,4 @@
-const text = "Frontend Developer | React Learner";
+const text = "Frontend Developer | React Developer | JavaScript Enthusiast";
 const btn  = document.getElementById("themeBtn");
 const hiddenElements = document.querySelectorAll(".hidden")
 const projectBtn = document.getElementById("projectBtn");
