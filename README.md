@@ -1,51 +1,46 @@
-# 🌐 Personal Portfolio Website
+# 🚀 Deepak Tiwari Portfolio
 
-A modern and responsive portfolio website built using HTML, CSS, and JavaScript.
+A modern and responsive personal portfolio website built using HTML, CSS, and JavaScript.
 
-## 🚀 Live Demo
-
-[View Portfolio](https://deepak-tiwari-delta.github.io/portfolio-website/)
-
-## 📌 Features
+## 🌟 Features
 
 - Responsive Design
 - Dark Mode Toggle
-- Typing Text Animation
-- Smooth Scrolling Navigation
-- Scroll Reveal Animation
-- Skills Section with Icons
+- Typing Animation
+- Professional Hero Section
+- Floating Tech Icons
+- Skills Showcase
 - Project Showcase
-- Contact Form Validation
-- Resume Download Button
-- GitHub & LinkedIn Integration
+- GitHub Stats
+- Experience Timeline
+- Advanced Contact Section
+- Scroll Progress Bar
+- Back To Top Button
+- Modern Footer
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript (ES6)
+- JavaScript
+- Font Awesome
 
-## 📂 Project Structure
+## 📂 Projects Included
 
-```text
-portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-├── Deepak_Tiwari_Resume.pdf
-└── README.md
-```
+### 💼 Job Tracker Dashboard
+A React-based job application tracking system with:
+- CRUD Operations
+- Search & Filter
+- Sorting
+- Dashboard Statistics
+- Dark Mode
+- Local Storage
 
-## 🎯 What I Learned
+### ✅ To-Do App
+Task management application with add, delete and complete task functionality.
 
-- DOM Manipulation
-- Event Listeners
-- Form Validation
-- Dark Mode Implementation
-- Scroll Animations
-- Responsive Web Design
-- Git & GitHub Workflow
+### 🌦️ Weather App
+Real-time weather application using JavaScript.
 
 ## 📸 Screenshot
 

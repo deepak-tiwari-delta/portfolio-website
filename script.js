@@ -1,6 +1,6 @@
 const text = "Frontend Developer | React Developer | JavaScript Enthusiast";
-const btn  = document.getElementById("themeBtn");
-const hiddenElements = document.querySelectorAll(".hidden")
+const btn = document.getElementById("themeBtn");
+const hiddenElements = document.querySelectorAll(".hidden");
 const projectBtn = document.getElementById("projectBtn");
 const contactBtn = document.getElementById("contactBtn");
 const form = document.getElementById("contactForm");
@@ -8,80 +8,99 @@ let index = 0;
 
 // Home button section
 projectBtn.addEventListener("click", function () {
-    document.getElementById("projects").scrollIntoView({
-        behavior: "smooth"
-    });
+  document.getElementById("projects").scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
 contactBtn.addEventListener("click", function () {
-    document.getElementById("contact").scrollIntoView({
-        behavior: "smooth"
-    });
+  document.getElementById("contact").scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
- //Home typing section
-function typeText(){
-    if(index < text.length){
-        document.getElementById("typing-text").textContent += text[index];
-        index++;
-        setTimeout(typeText, 100);
-    }
+//Home typing section
+function typeText() {
+  if (index < text.length) {
+    document.getElementById("typing-text").textContent += text[index];
+    index++;
+    setTimeout(typeText, 100);
+  }
 }
 typeText();
 
- // Dark mode section
-btn.addEventListener("click", function(){
-     
-    document.body.classList.toggle("dark-mode");
+// Dark mode section
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
 
-    if(document.body.classList.contains("dark-mode")){
-        btn.textContent = "Light Mode";
+  if (document.body.classList.contains("dark-mode")) {
+    btn.textContent = "Light Mode";
+  } else {
+    btn.textContent = "Dark Mode";
+  }
+});
 
-    }else{
-        btn.textContent = "Dark Mode";
-    }
-})
-
- // scroll window section
- window.addEventListener("scroll", function () {
-
+// scroll window section
+window.addEventListener("scroll", function () {
   hiddenElements.forEach(function (element) {
-
     const elementTop = element.getBoundingClientRect().top;
 
     if (elementTop < window.innerHeight - 100) {
-
       element.classList.add("show");
-
     }
-
   });
-
 });
-   // contact form submit
-   form.addEventListener("submit", function(event){
-    event.preventDefault();
+// contact form submit
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
-    
-   // validation logic
-   if(name.trim() === ""){
+  // validation logic
+  if (name.trim() === "") {
     alert("Please enter your name");
-   }
-   else if(email.trim() === ""){
+  } else if (email.trim() === "") {
     alert("Please enter your email");
-   }
-   else if(!email.includes("@")){
+  } else if (!email.includes("@")) {
     alert("Please enter valid email");
-   }
-   else if (message.trim() === ""){
+  } else if (message.trim() === "") {
     alert("Please enter your message");
-   }
-   else{
+  } else {
     alert("Message sent successfully!");
     form.reset();
-   }
-   });
+  }
+});
+
+//  scroll
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+
+  const scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+
+  document.getElementById("progress-bar").style.width = scrollPercent + "%";
+});
+
+// top button
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

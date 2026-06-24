@@ -10,14 +10,18 @@
 </head>
 
 <body>
+    <div id="progress-bar"></div>
 
     <nav>
+        <div class="logo">Deepak.</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#experience">Journey</a></li>
         </ul>
         <button id="themeBtn">Dark Mode</button>
     </nav>
@@ -54,6 +58,22 @@
 
             <div class="hero-image">
                 <img src="myImg.jpeg" alt="Deepak" class="profile-img">
+
+                <span class="floating-icon react">
+                    <i class="fa-brands fa-react"></i>
+                </span>
+
+                <span class="floating-icon js">
+                    <i class="fa-brands fa-js"></i>
+                </span>
+
+                <span class="floating-icon html">
+                    <i class="fa-brands fa-html5"></i>
+                </span>
+
+                <span class="floating-icon css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </span>
             </div>
 
         </div>
@@ -92,10 +112,19 @@
 
         <h2>Projects</h2>
         <div class="project-card">
-            <h3>Job Tracker Dashboard </h3>
-            <p>A modern React-based Job Tracker Dashboard that helps users manage job applications efficiently. Features
-                include CRUD operations, application status tracking, search, filtering, sorting, dark mode, responsive
-                design, and local storage support for data persistence.</p>
+
+            <h3>💼 Job Tracker Dashboard</h3>
+
+            <p>
+                A modern React-based Job Tracker Dashboard with CRUD operations,
+                search, filtering, sorting, dark mode and local storage support.
+            </p>
+
+            <div class="tech-stack">
+                <span>React</span>
+                <span>CSS</span>
+                <span>Local Storage</span>
+            </div>
             <a href="https://github.com/deepak-tiwari-delta/Job-Tracker-dashboard">GitHub</a>
             <a href="https://job-tracker-dashboard-peach.vercel.app/">Live Demo</a>
         </div>
@@ -104,6 +133,11 @@
             <h3>To-Do List App</h3>
             <p>A task management application built using HTML, CSS, and JavaScript with features like add, delete,
                 complete tasks, and keyboard support.</p>
+
+            <div class="tech-stack">
+                <span>JavaScript</span>
+                <span>CSS</span>
+            </div>
             <a href="https://github.com/deepak-tiwari-delta/To-do-app-project">GitHub</a>
             <a href="https://deepak-tiwari-delta.github.io/To-do-app-project/">Live Demo</a>
         </div>
@@ -112,33 +146,170 @@
             <h3>Weather App</h3>
             <p>A weather application built using HTML, CSS, and JavaScript that displays real-time weather information
                 based on user input.</p>
+            <div class="tech-stack">
+                <span>API</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+            </div>
             <a href="https://github.com/deepak-tiwari-delta/Weather-App">Github</a>
             <a href="https://deepak-tiwari-delta.github.io/Weather-App">Live Demo</a>
         </div>
     </section>
 
+    <!-- Github section  -->
+
+    <section id="github" class="hidden">
+        <h2>GitHub Stats</h2>
+
+        <div class="github-stats">
+
+            <img src="https://github-readme-stats.vercel.app/api?username=deepak-tiwari-delta&show_icons=true&theme=tokyonight"
+                alt="GitHub Stats">
+
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=deepak-tiwari-delta&layout=compact&theme=tokyonight"
+                alt="Top Languages">
+
+        </div>
+    </section>
+
+    <!-- Timeline section -->
+
+    <section id="experience" class="hidden">
+
+        <h2>My Journey</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>2024 - Started Web Development</h3>
+
+                    <p>
+                        Began learning HTML, CSS and JavaScript
+                        and built my first web pages.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>2025 - Frontend Projects</h3>
+
+                    <p>
+                        Built multiple projects including
+                        Weather App and To-Do App while
+                        improving JavaScript skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <h3>2026 - React Development</h3>
+
+                    <p>
+                        Developed Job Tracker Dashboard
+                        using React, Local Storage,
+                        Search, Filter, Sorting and Dark Mode.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- contact section -->
     <section id="contact" class="hidden">
-        <h2>Contact</h2>
 
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name">
+        <h2>Get In Touch</h2>
+        <p class="contact-subtitle">
+            Have a project in mind? Let's connect and build something amazing.
+        </p>
 
-            <input type="email" id="email" placeholder="Your Email">
+        <div class="contact-container">
 
-            <textarea id="message" placeholder="Your Message"></textarea>
+            <div class="contact-info">
 
-            <button type="submit">Send Message</button>
-        </form>
+                <h3>Let's Work Together 🚀</h3>
 
-        <p>Email: deepak626313@gmail.com</p>
+                <p>
+                    I'm a Frontend Developer passionate about
+                    building responsive and user-friendly web applications.
+                </p>
 
-        <a href="https://github.com/deepak-tiwari-delta" target="_blank">Github</a>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>deepak626313@gmail.com</span>
+                </div>
 
-        <a href="https://www.linkedin.com/in/deepak-tiwari-myprofile/" target="_blank">LinkedIn</a>
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/deepak-tiwari-delta" target="_blank">
+                        GitHub Profile
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/deepak-tiwari-myprofile/" target="_blank">
+                        LinkedIn Profile
+                    </a>
+                </div>
+
+            </div>
+
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name">
+
+                <input type="email" id="email" placeholder="Your Email">
+
+                <textarea id="message" placeholder="Your Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
     </section>
+    <button id="topBtn">
+        ↑
+    </button>
     <footer>
-        <p>© 2026 Deepak Tiwari</p>
+
+        <h3>Deepak Tiwari</h3>
+
+        <p>
+            Frontend Developer |
+            React Developer
+        </p>
+
+        <div class="footer-links">
+
+            <a href="https://github.com/deepak-tiwari-delta" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/deepak-tiwari-myprofile/" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 All Rights Reserved
+        </p>
+
     </footer>
     <script src="script.js"></script>
 </body>
